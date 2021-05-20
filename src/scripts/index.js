@@ -16,7 +16,7 @@ datas.forEach(function (data) {
         <div class="list_item_content">
           <div class="list_item_title">
             <h1 class="list_item_title_text"><a href="#">${data.name}</a></h1>
-            <div>
+            <div class="rating">
               <p class="list_item_rating_value">
                 <a href="#" class="${
                   data.rating >= 1.0

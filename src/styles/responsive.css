@@ -25,7 +25,7 @@
 	}
 	.navitemsmob {
 		display: list-item;
-		color: black !important;
+		color: #000 !important;
 		width: 100%;
 		text-align: left
 	}
