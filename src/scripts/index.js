@@ -15,18 +15,17 @@ datas.forEach(function (data) {
         <div class="city">${data.city}</div>
         <div class="list_item_content">
             <p class="list_item_rating">
-                Rating : 
-                <a href="#" class="${
-                  data.rating >= 1.0
-                    ? data.rating >= 2.5
-                      ? data.rating >= 4.0 
-                        ? data.rating >= 4.5
-                          ? 'list_item_rating_value_very-high'
-                          : 'list_item_rating_value_high'
-                        : 'list_item_rating_value_average'
-                      : 'list_item_rating_value_low'
-                    : 'list_item_rating_value_very-low'
-                }">${data.rating}</a>
+            <a href="#" class="stars ${
+              data.rating >= 1.0
+                ? data.rating >= 2.5
+                  ? data.rating >= 4.0
+                    ? data.rating >= 4.5
+                      ? 'list_item_rating_value_very-high'
+                      : 'list_item_rating_value_high'
+                    : 'list_item_rating_value_average'
+                  : 'list_item_rating_value_low'
+                : 'list_item_rating_value_very-low'
+            }">${data.rating}</a>
             </p>
             <h1 class="list_item_title"><a href="#">${data.name}</a></h1>
             <div class="list_item_desc">${data.description.slice(
