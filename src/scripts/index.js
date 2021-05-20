@@ -14,20 +14,28 @@ datas.forEach(function (data) {
   }" title="${data.name}">
         <div class="city">${data.city}</div>
         <div class="list_item_content">
-            <p class="list_item_rating">
-            <a href="#" class="stars ${
-              data.rating >= 1.0
-                ? data.rating >= 2.5
-                  ? data.rating >= 4.0
-                    ? data.rating >= 4.5
-                      ? 'list_item_rating_value_very-high'
-                      : 'list_item_rating_value_high'
-                    : 'list_item_rating_value_average'
-                  : 'list_item_rating_value_low'
-                : 'list_item_rating_value_very-low'
-            }">${data.rating}</a>
-            </p>
-            <h1 class="list_item_title"><a href="#">${data.name}</a></h1>
+          <div class="list_item_title">
+            <h1 class="list_item_title_text"><a href="#">${data.name}</a></h1>
+            <div>
+              <p class="list_item_rating_value">
+                <a href="#" class="${
+                  data.rating >= 1.0
+                  ? data.rating >= 2.5
+                    ? data.rating >= 4.0
+                      ? data.rating >= 4.5
+                        ? 'list_item_rating_value_very-high'
+                        : 'list_item_rating_value_high'
+                      : 'list_item_rating_value_average'
+                    : 'list_item_rating_value_low'
+                  : 'list_item_rating_value_very-low'
+                }">${data.rating}</a>
+              </p>
+              <div class="item_rating">
+                <div class="empty-rating"></div>
+                <div class="full-rating" style="width:${data.rating / 5 * 100}%"></div>
+              </div>
+            </div>
+          </div>
             <div class="list_item_desc">${data.description.slice(
               0,
               175
