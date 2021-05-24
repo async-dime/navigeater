@@ -95,7 +95,6 @@ body {
   box-sizing: border-box;
   display: inline-block;
   text-align: right;
-  line-height: 1.5rem;
   text-transform: uppercase;
   padding: 0.5em;
 }
@@ -189,7 +188,7 @@ main {
 .list_item_title {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-column-gap: 12px;
+  grid-column-gap: 5px;
   margin-bottom: 50px;
 }
 .list_item_title_text {
@@ -206,14 +205,16 @@ main {
   color: inherit;
 }
 .rating {
-  display:flex;
-  flex-direction:column;
+  /* display: flex;
+  flex-direction: column; */
   justify-content: center;
 }
 .list_item_rating_value {
   font-weight: 700;
   margin: 0 auto;
   text-align: center;
+  vertical-align: middle;
+  font-size: max(1em, 16px);
 }
 .list_item_rating_value_very-high {
   color: var(--rating-green);
@@ -238,6 +239,7 @@ main {
 .item_rating {
   position: relative;
   vertical-align: middle;
+  text-align: center;
   display: inline-block;
   color: var(--gray);
   overflow: hidden;
@@ -247,7 +249,7 @@ main {
   top: 0;
   color: var(--red);
   font-weight: 700;
-  text-align: right;
+  text-align: center;
   margin: auto 0;
   white-space: nowrap;
   overflow: hidden;
@@ -298,4 +300,14 @@ footer {
   top: 1rem;
   padding: 1vh;
   margin: auto;
+}
+.button-size-min {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+  margin: auto 0;
+  object-fit: cover;
+}
+.align-middle {
+  vertical-align: middle;
 }

@@ -15,10 +15,10 @@ datas.forEach(function (data) {
         <div class="city">${data.city}</div>
         <div class="list_item_content">
           <div class="list_item_title">
-            <h1 class="list_item_title_text"><a href="#">${data.name}</a></h1>
+            <h1 class="list_item_title_text"><a class="button-size-min" href="#">${data.name}</a></h1>
             <div class="rating">
               <p class="list_item_rating_value">
-                <a href="#" class="${
+                <a href="#" class="button-size-min ${
                   data.rating >= 1.0
                   ? data.rating >= 2.5
                     ? data.rating >= 4.0
