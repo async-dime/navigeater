@@ -205,9 +205,7 @@ main {
   color: inherit;
 }
 .rating {
-  /* display: flex;
-  flex-direction: column; */
-  justify-content: center;
+  text-align: center;
 }
 .list_item_rating_value {
   font-weight: 700;
@@ -249,7 +247,6 @@ main {
   top: 0;
   color: var(--red);
   font-weight: 700;
-  text-align: center;
   margin: auto 0;
   white-space: nowrap;
   overflow: hidden;
@@ -264,6 +261,7 @@ main {
 }
 .full-rating:before {
   -webkit-text-stroke: 1px var(--red);
+  text-align: center;
 }
 /* Webkit-text-stroke is not supported on firefox or IE */
 /* Firefox */
