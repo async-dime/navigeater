@@ -212,7 +212,9 @@ main {
   margin: 0 auto;
   text-align: center;
   vertical-align: middle;
-  font-size: max(1em, 16px);
+  /* font-size: max(1em, 16px); */
+  font-size: calc(16px + 1vw);
+  line-height: calc(1.1em + 0.5vw);
 }
 .list_item_rating_value_very-high {
   color: var(--rating-green);
