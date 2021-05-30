@@ -1,12 +1,13 @@
+/* eslint-disable no-nested-ternary */
 import 'regenerator-runtime';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import * as dataJson from '../DATA.json';
 
-//Restaurant fetch
-let datas = dataJson.restaurants;
+// Restaurant fetch
+const datas = dataJson.restaurants;
 let dataItems = '';
-datas.forEach(function (data) {
+datas.forEach((data) => {
   dataItems += `
     <div class="list_item">
         <img class="list_item_thumb" src="${data.pictureId}" alt="${
