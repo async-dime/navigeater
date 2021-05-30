@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600;700&display=swap");
 :root {
   --gray: #2d4059;
   --green: #1fab89;
@@ -16,7 +16,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'KoHo', sans-serif;
+  font-family: "KoHo", sans-serif;
 }
 body,
 html {
@@ -255,7 +255,7 @@ main {
 }
 .empty-rating:before,
 .full-rating:before {
-  content: '\25CF\25CF\25CF\25CF\25CF';
+  content: "\25CF\25CF\25CF\25CF\25CF";
   font-size: 16pt;
 }
 .empty-rating:before {
@@ -280,7 +280,7 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 footer {
