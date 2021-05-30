@@ -11,6 +11,7 @@
   .nav {
     display: none;
   }
+  /* 🔨 Sebelum navigation drawer ditampilkan sebaiknya komponen tersebut dihilangkan atau disembunyikan. Supaya ketika pengguna melakukan navigasi menggunakan keyboard, tautan navigasi tidak terkena fokus. */
   .navmob {
     z-index: 10;
     background-color: #fff;
@@ -19,10 +20,12 @@
     -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
     transition: transform 0.3s ease;
+    visibility: hidden;
   }
   .open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+    visibility: visible;
   }
   .navitemsmob {
     display: list-item;

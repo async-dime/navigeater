@@ -11,7 +11,11 @@
     <!-- Mobile Navbar -->
     <div class="menumob">
       <div class="iconmenu" id="menu">
-        <a class="button-size-min" href="#">&#9776;</a>
+        <!-- 🔨 Gunakan button daripada anchor untuk membuat clickable element yang tidak menyimpan link. --> 
+        <!-- 🔨 Menambahkan atribut aria-label demi aksesibilitas pengguna yang lebih baik. -->
+        <button aria-label="menu" class="button-size-min" href="#">
+          &#9776;
+        </button>
       </div>
       <div class="logomob button-size-min">Navigeater</div>
     </div>
@@ -150,7 +154,11 @@
         </svg>
       </a>
       <ul class="navlist">
-        <li class="navitems"><a class="button-size-min" href="/"><p class="align-middle">Home</p></a></li>
+        <li class="navitems">
+          <a class="button-size-min" href="/"
+            ><p class="align-middle">Home</p></a
+          >
+        </li>
         <li class="navitems">
           <a class="button-size-min" href="#">Favorite</a>
         </li>

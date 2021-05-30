@@ -52,15 +52,16 @@ const hero = document.querySelector('.hero');
 const main = document.querySelector('main');
 const drawer = document.querySelector('#drawer');
 
-menu.addEventListener('click', function (event) {
+// 🔨 Gunakan arrow-function 
+menu.addEventListener('click', (event) => {
   drawer.classList.toggle('open');
   event.stopPropagation();
 });
 
-hero.addEventListener('click', function () {
+hero.addEventListener('click', () => {
   drawer.classList.remove('open');
 });
 
-main.addEventListener('click', function () {
+main.addEventListener('click', () => {
   drawer.classList.remove('open');
 });
