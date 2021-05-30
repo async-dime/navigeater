@@ -15,31 +15,32 @@ datas.forEach(function (data) {
         <div class="city">${data.city}</div>
         <div class="list_item_content">
           <div class="list_item_title">
-            <h1 class="list_item_title_text"><a class="button-size-min" href="#">${data.name}</a></h1>
+            <h1 class="list_item_title_text"><a class="button-size-min" href="#">${
+              data.name
+            }</a></h1>
             <div class="rating">
               <p class="list_item_rating_value">
                 <a href="#" class="button-size-min ${
                   data.rating >= 1.0
-                  ? data.rating >= 2.5
-                    ? data.rating >= 4.0
-                      ? data.rating >= 4.5
-                        ? 'list_item_rating_value_very-high'
-                        : 'list_item_rating_value_high'
-                      : 'list_item_rating_value_average'
-                    : 'list_item_rating_value_low'
-                  : 'list_item_rating_value_very-low'
+                    ? data.rating >= 2.5
+                      ? data.rating >= 4.0
+                        ? data.rating >= 4.5
+                          ? 'list_item_rating_value_very-high'
+                          : 'list_item_rating_value_high'
+                        : 'list_item_rating_value_average'
+                      : 'list_item_rating_value_low'
+                    : 'list_item_rating_value_very-low'
                 }">${data.rating}</a>
               </p>
               <div class="item_rating">
                 <div class="empty-rating"></div>
-                <div class="full-rating" style="width:${data.rating / 5 * 100}%"></div>
+                <div class="full-rating" style="width:${
+                  (data.rating / 5) * 100
+                }%"></div>
               </div>
             </div>
           </div>
-            <div class="list_item_desc">${data.description.slice(
-              0,
-              175
-            )}...</div>
+            <div class="list_item_desc">${data.description}</div>
         </div>
     </div>
     `;
@@ -52,7 +53,7 @@ const hero = document.querySelector('.hero');
 const main = document.querySelector('main');
 const drawer = document.querySelector('#drawer');
 
-// 🔨 Gunakan arrow-function 
+// 🔨 Gunakan arrow-function
 menu.addEventListener('click', (event) => {
   drawer.classList.toggle('open');
   event.stopPropagation();
